@@ -221,7 +221,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('https://i.postimg.cc/rc69JFbB/Mechas-Trio-bw.png');
+  background-image: url('https://i.postimg.cc/2mVbyVD0/Mechas-Trio-bw.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -863,4 +863,5 @@ footer {
   .nav-links a {
     font-size: 0.65rem;
   }
+
 }

@@ -125,15 +125,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // ===== CERRAR LIGHTBOX =====
 function closeLightbox() {
-  history.replaceState(null, null, window.location.pathname);
+  // Cambiamos a un hash neutro que no existe
+  window.location.hash = '#_';
 }
 
+// Cerrar lightbox con tecla Escape
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') {
     if (window.location.hash.startsWith('#img')) {
       closeLightbox();
     }
   }
+});
+
+// Cerrar lightbox haciendo click en la X
+document.querySelectorAll('.close-btn').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    closeLightbox();
+  });
+});
+
+// Cerrar lightbox haciendo click fuera de la imagen
+document.querySelectorAll('.close-area').forEach(area => {
+  area.addEventListener('click', function(e) {
+    e.preventDefault();
+    closeLightbox();
+  });
 });
 
 // ===== COPIAR EMAIL =====

@@ -125,7 +125,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // ===== CERRAR LIGHTBOX =====
 function closeLightbox() {
-  history.pushState("", document.title, window.location.pathname);
+  window.location.hash = '';
 }
 
 document.addEventListener('keydown', function(e) {

@@ -230,7 +230,7 @@ body {
 }
 
 [data-theme="light"] .hero-bg {
-  opacity: 0.08;
+  opacity: 0.10;
 }
 
 .hero-content {
@@ -869,3 +869,4 @@ footer {
 #_ {
   display: none;
 }
+
